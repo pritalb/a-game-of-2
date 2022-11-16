@@ -8,13 +8,13 @@ public class PlayerController : MonoBehaviour
     public float movespeed = 1f;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float hrMove = Input.GetAxis("Horizontal") * Time.deltaTime * movespeed;
         float vrMove = Input.GetAxis("Vertical") * Time.deltaTime * movespeed;
