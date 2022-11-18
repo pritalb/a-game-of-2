@@ -16,9 +16,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float hrMove = Input.GetAxis("Horizontal") * Time.deltaTime * movespeed;
-        float vrMove = Input.GetAxis("Vertical") * Time.deltaTime * movespeed;
+        float hrMove = Input.GetAxis("Horizontal"); //* Time.deltaTime * movespeed;
+        float vrMove = Input.GetAxis("Vertical"); //* Time.deltaTime * movespeed;
 
-        rb.transform.Translate(new Vector2(hrMove, vrMove));
+        // rb.transform.Translate(new Vector2(hrMove, vrMove));
+        rb.velocity = new Vector2(hrMove, vrMove) * movespeed;
     }
 }
