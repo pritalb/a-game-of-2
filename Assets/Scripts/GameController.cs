@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public int next_level;
+
     private bool goal_1_reached = false;
     private bool goal_2_reached = false;
 
@@ -36,16 +38,24 @@ public class GameController : MonoBehaviour
         return goal_1_reached;
     }
 
+    public void loadLevel(int levelNumber)
+    {
+        SceneManager.LoadScene(levelNumber);
+    }
+
+    IEnumerator loadLevelAfterDelay(int delay)
+    {
+        //Debug.Log("coroutine start");
+        yield return new WaitForSeconds(delay);
+        loadLevel(next_level);
+        //Debug.Log("coroutine ended");
+    }
     public void winGame()
     {
         if (goal_1_reached && goal_2_reached)
         {
             Debug.Log("win");
+            StartCoroutine(loadLevelAfterDelay(2));
         }
-    }
-
-    public void loadLevel(int levelNumber)
-    {
-        SceneManager.LoadScene(levelNumber);
     }
 }
