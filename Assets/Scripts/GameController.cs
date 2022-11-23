@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
     public int next_level;
+    public TMP_Text win_text;
 
     private bool goal_1_reached = false;
     private bool goal_2_reached = false;
@@ -55,6 +57,7 @@ public class GameController : MonoBehaviour
         if (goal_1_reached && goal_2_reached)
         {
             Debug.Log("win");
+            win_text.gameObject.SetActive(true);
             StartCoroutine(loadLevelAfterDelay(2));
         }
     }
