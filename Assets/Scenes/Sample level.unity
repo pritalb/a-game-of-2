@@ -263,7 +263,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0.3110486, b: 0.509434, a: 0}
+  m_BackGroundColor: {r: 0.91764706, g: 0.58431375, b: 0.0627451, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -324,12 +324,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colors:
-  - {r: 0.0627451, g: 0.56078434, b: 0.87843144, a: 1}
-  - {r: 0.34901962, g: 0.65882355, b: 0.21568629, a: 1}
+  - {r: 0.22292629, g: 0.4456828, b: 0.5849056, a: 1}
+  - {r: 0.1764706, g: 0.7176471, b: 0.2627451, a: 1}
   - {r: 0.7830189, g: 0.2688857, b: 0.2688857, a: 1}
   - {r: 0.093413986, g: 0.6037736, b: 0.5002573, a: 1}
   - {r: 0.8018868, g: 0.24510501, b: 0.74652225, a: 1}
   - {r: 0.43529415, g: 0.14117648, b: 0.7254902, a: 1}
+  - {r: 0.5764706, g: 0, b: 0.46666667, a: 1}
+  - {r: 0, g: 0.67058825, b: 0.454902, a: 1}
+  - {r: 0.6666667, g: 0, b: 0.67058825, a: 1}
+  - {r: 0.882353, g: 0.1764706, b: 0.3647059, a: 1}
+  - {r: 0.69411767, g: 0.44705883, b: 0.21176471, a: 1}
+  - {r: 0.7176471, g: 0.23529412, b: 0, a: 1}
+  - {r: 1, g: 0.39215687, b: 0.0627451, a: 1}
+  - {r: 0.91764706, g: 0.58431375, b: 0.0627451, a: 1}
   color_change_duration: 3
 --- !u!114 &519420034
 MonoBehaviour:
@@ -691,7 +699,7 @@ Transform:
   m_GameObject: {fileID: 1206127996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -768,7 +776,7 @@ TrailRenderer:
   m_Time: 1
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1310,7 +1318,7 @@ Transform:
   m_GameObject: {fileID: 1621319249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1400,7 +1408,7 @@ TrailRenderer:
   m_Time: 1
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.7
     widthCurve:
       serializedVersion: 2
       m_Curve:
