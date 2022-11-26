@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -261,7 +262,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.13333334, g: 0.09411765, b: 0.10980392, a: 0}
+  m_BackGroundColor: {r: 0.061249524, g: 0.56076443, b: 0.8773585, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -309,6 +310,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 879cbcf9cf01fee4ab97ef10f1df56c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.0627451, g: 0.56078434, b: 0.87843144, a: 1}
+  - {r: 0.34901962, g: 0.65882355, b: 0.21568629, a: 1}
+  - {r: 0.7830189, g: 0.2688857, b: 0.2688857, a: 1}
+  - {r: 0.093413986, g: 0.6037736, b: 0.5002573, a: 1}
+  - {r: 0.8018868, g: 0.24510501, b: 0.74652225, a: 1}
+  - {r: 0.43529415, g: 0.14117648, b: 0.7254902, a: 1}
+  color_change_duration: 5
 --- !u!1 &987699359
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +561,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 2d18566cf4581c34899d752aab145f75, type: 3}
-  m_Color: {r: 0.3372549, g: 0.8509804, b: 0.77254903, a: 1}
+  m_Color: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -927,7 +948,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e022b51e8f1f5f64c88a63af5504f6fc, type: 3}
-  m_Color: {r: 0.9372549, g: 0.38431373, b: 0.42352942, a: 1}
+  m_Color: {r: 0.13333334, g: 0.09411765, b: 0.10980392, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1050,7 +1071,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 2d18566cf4581c34899d752aab145f75, type: 3}
-  m_Color: {r: 0.9372549, g: 0.38431373, b: 0.42352942, a: 1}
+  m_Color: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1216,7 +1237,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e022b51e8f1f5f64c88a63af5504f6fc, type: 3}
-  m_Color: {r: 0.3372549, g: 0.8509804, b: 0.77254903, a: 1}
+  m_Color: {r: 0.13333334, g: 0.09411765, b: 0.10980392, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1327,7 +1348,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.7882353, g: 0.8352941, b: 0.70980394, a: 1}
+  m_Color: {r: 0.13333334, g: 0.09411765, b: 0.10980392, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1376,7 +1397,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952239059}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ce6c1dc64e31cf5419ded0bb886298c7, type: 3}
