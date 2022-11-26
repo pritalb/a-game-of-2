@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
 {
     public int next_level;
     public TMP_Text win_text;
+    public AudioSource audioSource;
+    public AudioClip victoryAudio;
 
     private bool goal_1_reached = false;
     private bool goal_2_reached = false;
@@ -57,6 +59,7 @@ public class GameController : MonoBehaviour
         if (goal_1_reached && goal_2_reached)
         {
             Debug.Log("win");
+            audioSource.PlayOneShot(victoryAudio);
             win_text.gameObject.SetActive(true);
             StartCoroutine(loadLevelAfterDelay(2));
         }
