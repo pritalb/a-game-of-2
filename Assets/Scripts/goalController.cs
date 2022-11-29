@@ -14,7 +14,7 @@ public class goalController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D trigger)
     {
-        if (trigger == target)
+        if (trigger.gameObject.name == target.gameObject.name)
         {
             if (goalNumber == 1) {
                 gameController.set_goal_1_to_true();
