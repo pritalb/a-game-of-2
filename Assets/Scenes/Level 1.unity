@@ -684,6 +684,10 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 900683432}
+    - target: {fileID: 9202584822362569069, guid: 5bcc9b8d306c6a74ba43ee299229c0ac, type: 3}
+      propertyPath: current_level
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9202584822362569070, guid: 5bcc9b8d306c6a74ba43ee299229c0ac, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -781,22 +785,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7642584779358921069, guid: dd12f6b7698eb3e4f8a5750a47aeba2c, type: 3}
-      propertyPath: m_Size.x
-      value: 2.456398
-      objectReference: {fileID: 0}
-    - target: {fileID: 7642584779358921069, guid: dd12f6b7698eb3e4f8a5750a47aeba2c, type: 3}
-      propertyPath: m_Size.y
-      value: 2.226435
-      objectReference: {fileID: 0}
-    - target: {fileID: 7642584779358921069, guid: dd12f6b7698eb3e4f8a5750a47aeba2c, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7642584779358921069, guid: dd12f6b7698eb3e4f8a5750a47aeba2c, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.019162297
-      objectReference: {fileID: 0}
     - target: {fileID: 7642584779358921071, guid: dd12f6b7698eb3e4f8a5750a47aeba2c, type: 3}
       propertyPath: m_Name
       value: goal 2
@@ -810,22 +798,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7488473959020018788, guid: 135c4c97a0a9f824da7616910266ebab, type: 3}
-      propertyPath: m_Size.x
-      value: 2.5349033
-      objectReference: {fileID: 0}
-    - target: {fileID: 7488473959020018788, guid: 135c4c97a0a9f824da7616910266ebab, type: 3}
-      propertyPath: m_Size.y
-      value: 2.539465
-      objectReference: {fileID: 0}
-    - target: {fileID: 7488473959020018788, guid: 135c4c97a0a9f824da7616910266ebab, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0024901628
-      objectReference: {fileID: 0}
-    - target: {fileID: 7488473959020018788, guid: 135c4c97a0a9f824da7616910266ebab, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.09862763
-      objectReference: {fileID: 0}
     - target: {fileID: 7488473959020018789, guid: 135c4c97a0a9f824da7616910266ebab, type: 3}
       propertyPath: m_Name
       value: goal 1

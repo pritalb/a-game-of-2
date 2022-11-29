@@ -6,13 +6,20 @@ using TMPro;
 
 public class GameController : MonoBehaviour
 {
-    public int next_level;
+    public int current_level;
     public TMP_Text win_text;
+    public TMP_Text lose_text;
     public AudioSource audioSource;
     public AudioClip victoryAudio;
 
+    public int next_level;
     private bool goal_1_reached = false;
     private bool goal_2_reached = false;
+
+    private void Awake()
+    {
+        next_level = current_level + 1;
+    }
 
     public void set_goal_1_to_true() {
         goal_1_reached = true;
@@ -47,11 +54,11 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(levelNumber);
     }
 
-    IEnumerator loadLevelAfterDelay(int delay)
+    IEnumerator loadLevelAfterDelay(int levelNumber, int delay)
     {
         //Debug.Log("coroutine start");
         yield return new WaitForSeconds(delay);
-        loadLevel(next_level);
+        loadLevel(levelNumber);
         //Debug.Log("coroutine ended");
     }
     public void winGame()
@@ -61,7 +68,14 @@ public class GameController : MonoBehaviour
             Debug.Log("win");
             audioSource.PlayOneShot(victoryAudio);
             win_text.gameObject.SetActive(true);
-            StartCoroutine(loadLevelAfterDelay(2));
+            StartCoroutine(loadLevelAfterDelay(next_level, 2));
         }
+    }
+
+    public void loseGame()
+    {
+        StartCoroutine(loadLevelAfterDelay(current_level, 1));
+        lose_text.gameObject.SetActive(true);
+        Debug.Log("lost game!");
     }
 }
