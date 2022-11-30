@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 952931835}
     - target: {fileID: 9202584822362569069, guid: 5bcc9b8d306c6a74ba43ee299229c0ac, type: 3}
       propertyPath: next_level
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9202584822362569069, guid: 5bcc9b8d306c6a74ba43ee299229c0ac, type: 3}
       propertyPath: audioSource
@@ -618,6 +618,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6162139716870160127, guid: d52934ca7ce49714386576f2229e1235, type: 3}
+      propertyPath: m_text
+      value: All Levels Cleared
+      objectReference: {fileID: 0}
     - target: {fileID: 6162139716944993832, guid: d52934ca7ce49714386576f2229e1235, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -713,6 +717,10 @@ PrefabInstance:
     - target: {fileID: 6162139717601667032, guid: d52934ca7ce49714386576f2229e1235, type: 3}
       propertyPath: m_text
       value: Level 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162139718009417247, guid: d52934ca7ce49714386576f2229e1235, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d52934ca7ce49714386576f2229e1235, type: 3}

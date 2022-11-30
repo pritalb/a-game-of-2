@@ -16,10 +16,10 @@ public class GameController : MonoBehaviour
     private bool goal_1_reached = false;
     private bool goal_2_reached = false;
 
-    private void Awake()
-    {
-        next_level = current_level + 1;
-    }
+    //private void Awake()
+    //{
+    //    next_level = current_level + 1;
+    //}
 
     public void set_goal_1_to_true() {
         goal_1_reached = true;
